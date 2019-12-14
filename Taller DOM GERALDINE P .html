@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web 3.0</title>
+
+    <script>
+        function init() {
+          var arrImages = new Array(3);
+        
+          arrImages[0] = document.getElementById("image1");
+          arrImages[1] = document.getElementById("image2");
+          arrImages[2] = document.getElementById("image3");
+        
+          var objOutput = document.getElementById("output");
+          var strHtml = "<ul>";
+        
+          for (var i = 0; i < arrImages.length; i++) {
+            strHtml += "<li>image" + (i+1) +
+                    ": height=" + arrImages[i].height +
+                    ", width=" + arrImages[i].width +
+                    ", style.height=" + arrImages[i].style.height +
+                    ", style.width=" + arrImages[i].style.width +
+                    "<\/li>";
+          }
+        
+          strHtml += "<\/ul>";
+        
+          objOutput.innerHTML = strHtml;
+        }
+        </script>
+  </head>
+  <body>
+    <h1>Web 3.0</h1>
+
+    <p>Image 1: no height, width, or style
+        <img id="image1" src="https://allthatclicks.com/wp-content/uploads/2009/02/webevolve.jpg">
+      </p>
+      
+      <p>Image 2: height="50", width="500", but no style
+        <img id="image2"
+             src="https://allthatclicks.com/wp-content/uploads/2009/02/webevolve.jpg"
+             height="50" width="500">
+      </p>
+      
+      <p>Image 3: no height, width, but style="height: 50px; width: 500px;"
+        <img id="image3"
+             src="https://allthatclicks.com/wp-content/uploads/2009/02/webevolve.jpg"
+             style="height: 50px; width: 500px;">
+      </p>
+      
+      <div id="output"> </div>
+
+    <p>La Web 3.0 es una web extendida, dotada de mayor significado donde cualquier usuario podra encontrar respuestas a sus preguntas de forma mas rapida.</p>
+    <h3>Funciones y caracteristicas:</h3>
+    
+    <ul>
+      <li>Inteligencia Artificial</li>
+      <li>Mineria de datos</li>
+      <li>Smartphones</li>
+      <li>Aplicaciones Moviles</li>
+    </ul>
+
+    <p>El analisis de estas caracteristicas y funciones dan como resultado una mejor experiencia al usuario, al interactuar diariamente</p>
+
+    <h3>Impacto en estrategias de marketing</h3>
+    <p>Se personaliza el producto a la medida del usuario, y conforme a su interaccion con las aplicaciones.</p>
+    <p>Se da a conocer nuevos productos conforme a las historiales de busquedas</p>
+
+    <a href="https://prezi.com/view/OBS6n4nWZ06RwJw8tSWn">Click aqui para ver presentacion</a>
+
+
+  </body>
+</html>
